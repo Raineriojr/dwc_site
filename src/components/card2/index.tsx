@@ -1,4 +1,4 @@
-import { Avatar, Box, Card } from "@mui/material";
+import { Box, Card } from "@mui/material";
 
 import { Title } from "../title";
 

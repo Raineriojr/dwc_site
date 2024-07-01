@@ -1,8 +1,5 @@
 import { Box, Card, CardContent } from "@mui/material";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-
 import { Title } from "../title";
 
 interface CardComponentProps {

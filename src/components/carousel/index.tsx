@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import { Title } from "../title";
-import { carouselData } from "../../fake-data";
+import { carouselData } from "../../data";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 

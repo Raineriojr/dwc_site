@@ -32,7 +32,7 @@ const grey = {
 };
 
 const TextareaAutosize = styled(BaseTextareaAutosize)(
-  ({ theme }) => `
+  () => `
   box-sizing: border-box;
   width: 100%;
   resize: none;

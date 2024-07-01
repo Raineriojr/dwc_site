@@ -1,4 +1,4 @@
-import { faFacebookSquare, faLinkedin, faSquareInstagram, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const socialItems = [
   { name: 'LinkedIn', link: 'https://www.linkedin.com/company/dwcconsult/mycompany/', icon: faLinkedin },
