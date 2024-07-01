@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { useTheme } from '@mui/material/styles';
 import { Box, Button, MobileStepper } from "@mui/material"
-import SwipeableViews from 'react-swipeable-views-react-18-fix';
+import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -48,7 +48,7 @@ export const Carousel = ({ isSmallScreen }: CarouselProps) => {
         interval={6000}
       >
         {carouselData.map((step: { title: string, subtitle: string }, index: number) => (
-          <div key={step.title}>
+          <div key={index}>
             {Math.abs(activeStep - index) <= 2 ? (
               <Fragment>
                 <Title isSmallScreen={isSmallScreen}>{step.title}</Title>
