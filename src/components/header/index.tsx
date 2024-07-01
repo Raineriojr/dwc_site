@@ -28,10 +28,9 @@ export const Header = ({ isSmallScreen }: HeaderProps) => {
       </Box>
       <Box display="flex" px={2} flex={0.5} gap={4} alignItems="center" justifyContent={isSmallScreen ? 'center' : 'flex-end'}>
         {links.map((item, index) => (
-          <Fragment>
+          <Fragment key={index}>
             {index === 3 || index === 4 ? (
               <Link
-                key={index}
                 href={item.link}
                 target="_blank"
                 underline='none'

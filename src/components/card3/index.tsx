@@ -1,17 +1,19 @@
 import { Avatar, Box, Card } from "@mui/material";
 
 import { Title } from "../title";
-import { MutableRefObject, forwardRef } from "react";
+import { ForwardedRef, forwardRef } from "react";
 
 interface Card3ComponentProps {
   title: string;
   content: string;
   icon: string;
   maxWidth?: number | string;
-  ref?: MutableRefObject<HTMLDivElement | null>;
 }
 
-export const Card3Component = forwardRef(({ title, content, icon, maxWidth, ref }: Card3ComponentProps) => {
+export const Card3Component = forwardRef((
+  { title, content, icon, maxWidth }: Card3ComponentProps,
+  ref: ForwardedRef<HTMLDivElement>
+) => {
   return (
     <Card
       ref={ref}
