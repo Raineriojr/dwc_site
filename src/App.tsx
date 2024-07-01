@@ -25,7 +25,7 @@ import Logo from './assets/logo2.png';
 import BackgroundImage from './assets/bg.jpg';
 import BackgroundImage2 from './assets/bg2.jpg';
 
-import { cards, companyCards, contacts, specialties } from './fake-data';
+import { cards, companyCards, contacts, specialties } from './data';
 import { useInView } from './hooks/UseInView';
 import { headerStyle, imageStyle, blurImageStyle } from './style';
 
